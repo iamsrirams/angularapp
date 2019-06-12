@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+
+import { Component, NgModule } from '@angular/core';
+
+import { HeaderComponent } from './common/header/header.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bmw-cli';
+
+
+
 }

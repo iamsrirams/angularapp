@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -34,7 +35,9 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
+
               ],
+
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -71,6 +74,7 @@
             "browserTarget": "bmw-cli:build"
           }
         },
+
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -100,7 +104,10 @@
               "**/node_modules/**"
             ]
           }
+
         },
+
+
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
